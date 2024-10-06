@@ -6,7 +6,6 @@ CORS(app)
 
 @app.route("/api/skibidify", methods=["GET"])
 def skibidify():
-    console.log
     name = request.args.get("name", "World")
     return jsonify({'message': f"Hello {name}"})
 
